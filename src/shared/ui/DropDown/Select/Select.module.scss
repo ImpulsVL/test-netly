@@ -1,0 +1,140 @@
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+  height: max-content;
+  font-family: $fontFamilyMain;
+}
+
+.select-opener {
+  padding: 14px 18px;
+  border: none;
+  border-radius: $border-radius8;
+  background-color: $white300;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-align: left;
+  cursor: pointer;
+  font: $fontP2;
+}
+
+.select-text {
+  width: 100%;
+  color: $whiteMain;
+}
+
+.large-select-text {
+  font-size: var(--font-size-p3);
+  font-weight: 500;
+}
+
+.medium-select-text {
+  font-size: var(--font-size-p5);
+  font-weight: 500;
+}
+
+.small-select-text {
+  font-size: var(--font-size-p7);
+  font-weight: 500;
+}
+
+.large-select-svg {
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.medium-select-svg {
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.small-select-svg {
+  max-width: 14px;
+  max-height: 14px;
+}
+
+.select-label {
+  font: $fontP2;
+  color: $whiteMain;
+  margin-bottom: 4px;
+}
+
+.select-list {
+  width: inherit;
+  padding: 4px;
+  margin: 0;
+  margin-top: 10px;
+  background-color: $white300;
+  border-radius: $border-radius8;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $white400;
+    border-radius: $border-radius8;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: darken($white400, 10%);
+  }
+}
+
+.select-element {
+  list-style: none;
+  width: 100%;
+  padding: 13px;
+  border-radius: $border-radius8;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white300;
+  }
+}
+
+.select-element > * {
+  background-color: none;
+  width: 100%;
+  justify-content: left;
+  color: $whiteMain;
+  font: $fontP4;
+}
+
+.select-element > * > svg {
+  fill: $whiteMain;
+}
+
+.select-element > * > span {
+  color: $whiteMain;
+}
+
+.select-element > * > *:last-child {
+  margin-left: auto;
+}
+
+.bottom-label {
+  margin-top: 2px;
+  color: $white500;
+  font: $fontP6;
+}
+
+.bottom-large-label {
+  font-size: $fontP6;
+}
+
+.bottom-medium-label {
+  font-size: $fontP6;
+}
+
+.bottom-small-label {
+  font-size: $fontP6;
+}

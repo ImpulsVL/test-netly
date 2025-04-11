@@ -1,0 +1,15 @@
+.header {
+  height: 96px;
+  padding: 28px 48px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}

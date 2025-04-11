@@ -1,0 +1,135 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal_content {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $blackMain;
+
+  position: relative;
+
+  padding: 56px 40px 54px 40px;
+
+  width: 850px;
+  height: 710px;
+  border-radius: $border-radius16;
+  justify-content: space-between;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  right: 41px;
+  top: 41px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.modal__header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal__title {
+  color: $whiteMain;
+  font: $fontH2;
+}
+
+.modal__description {
+  color: $whiteMain;
+  font: $fontP2;
+}
+
+.modal__requirementsList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  justify-content: center;
+}
+
+.modal__requirementItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  width: 370px;
+  height: 66px;
+
+  background-color: $white200;
+  border-radius: $border-radius8;
+  padding: 16px 10px;
+
+  color: $whiteMain;
+  font: $fontP6;
+}
+
+.modal__taskItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  width: 243px;
+  height: 66px;
+
+  background-color: $white200;
+  border-radius: $border-radius8;
+  padding: 16px 10px;
+
+  color: $whiteMain;
+  font: $fontP5;
+}
+
+.modal__bid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19px;
+}
+
+.modal__switch {
+  height: 290px;
+}
+
+.switch__titles {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.title__switch {
+  padding: 8px 8px;
+
+  cursor: pointer;
+  color: $white500;
+  font: $fontH6;
+
+  transition: all 0.2s;
+
+  border-bottom: 1px solid transparent;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &.active {
+    color: $primaryMain;
+    border-bottom-color: $primaryMain;
+  }
+}

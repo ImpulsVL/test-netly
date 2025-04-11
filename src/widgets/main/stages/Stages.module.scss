@@ -1,0 +1,68 @@
+.stages__itemText {
+  color: $whiteMain;
+  font: $fontP2;
+}
+
+.stages {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.stages__title {
+  color: $whiteMain;
+  font: $fontH1;
+}
+
+.stages__block {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.stages__list {
+  width: 928px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  gap: 18px;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stages__item {
+  width: 455px;
+  height: 316px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 24px;
+
+  background-color: $white200;
+  border-radius: $border-radius12;
+}
+
+.stages__title {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  gap: 16px;
+}
+
+.stages__name {
+  color: $whiteMain;
+  font: $fontH4;
+}
+
+.bid {
+  margin-top: 56px;
+}

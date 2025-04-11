@@ -1,0 +1,68 @@
+.internship__title {
+  color: $whiteMain;
+  font: $fontH1;
+}
+
+.internship {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+
+.internship__list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.internship__item {
+  width: 384px;
+  height: 242px;
+
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 24px;
+
+  background-color: $white200;
+  border-radius: $border-radius12;
+}
+
+.item__title,
+.stage__number {
+  padding: 16px 24px;
+  border: 2px solid $primaryMain;
+  border-radius: $border-radius16;
+
+  color: $whiteMain;
+  font: $fontH4;
+}
+
+.internship__itemTitle {
+  padding: 16px 24px;
+  border: 2px solid $primaryMain;
+  border-radius: $border-radius16;
+
+  color: $whiteMain;
+  font: $fontH4;
+}
+
+.internship__itemText {
+  color: $whiteMain;
+  font: $fontP2;
+}
+
+.item__text {
+  color: $whiteMain;
+  font: $fontP2;
+}
